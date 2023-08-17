@@ -40,7 +40,6 @@ def insert(column_value, table_name):
   return result
 
 
-
 def delete(table_name, where):
   with psycopg.connect(CONN_STRING) as conn:
       with conn.cursor() as cur:
